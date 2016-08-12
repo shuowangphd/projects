@@ -71,7 +71,7 @@ using namespace std;
 
 int main(){
     /*
-     *@Author: Shuo Wang PHD
+     *@Author: Shuo Wang PHD (surew963 @ github)
      *@Language: C++
      *@Date modified: 2016-08-12
      * Sudoku game
