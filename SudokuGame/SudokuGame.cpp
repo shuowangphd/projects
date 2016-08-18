@@ -1,3 +1,9 @@
+//============================================================================
+// Name        : SudokuGame.cpp
+// Author      : Shuo Wang (github.com/surew963)
+// Version     : 2016-08-17
+// Description : Sudoku Game (generator and solver) in C++
+//============================================================================
 #include <iostream>
 #include <vector>
 #include <cstring>
@@ -40,7 +46,6 @@ using namespace std;
         for (int i = 0; i < 9; i++)
             fill(board[i].begin(), board[i].end(), '.');
         int cnt = 18, c2 = 1;
-        srand (time(NULL));
         while (cnt) {
             int k = rand()%81, c =(c2++)%9, i = k/9, j = k%9;;
             if (board[i][j] == '.' && !rules[0][i][c] &&
@@ -57,7 +62,6 @@ using namespace std;
         getNew(board, rules);
         while (!dfs(board, 0, rules)) getNew(board, rules);
         int cnt = 80;
-        srand (time(NULL));
         while (cnt--) {
             int k = rand()%81, i = k/9, j = k%9;;
             if (board[i][j] != '.') {
@@ -71,7 +75,7 @@ using namespace std;
 
 int main(){
     /*
-     *@Author: Shuo Wang PHD (surew963 @ github)
+     *@Author: Shuo Wang PHD
      *@Language: C++
      *@Date modified: 2016-08-12
      * Sudoku game
@@ -79,6 +83,7 @@ int main(){
     int rules[3][9][9];
     vector<vector<char>> board(9, vector<char>(9));
     cout <<"Welcome to Sudoku game."<< endl << endl;
+    srand (time(NULL));
     get(board, rules);
     char c;
     while (cin >> c) {
