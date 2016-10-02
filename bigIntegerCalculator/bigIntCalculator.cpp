@@ -2,7 +2,7 @@
 // Name        : bigIntCalculator.cpp
 // Author      : Shuo Wang (github.com/surew963)
 // Version     : 2016-10-01
-// Description : Sudoku Game (generator and solver) in C++
+// Description : big integer calculator in C++
 //============================================================================
 #include <iostream>
 #include <cstring>
