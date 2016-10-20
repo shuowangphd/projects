@@ -1,11 +1,5 @@
 //============================================================================
-// Name        : SudokuGame.cpp
-// Author      : Shuo Wang (github.com/surew963)
-// Version     : 2016-10-19
-// Description : Sudoku Game (generator and solver) in Java
-//============================================================================
-//============================================================================
-// Name        : SudokuGame.cpp
+// Name        : SudokuGame.java
 // Author      : Shuo Wang (github.com/surew963)
 // Version     : 2016-10-19
 // Description : Sudoku Game (generator and solver) in Java
